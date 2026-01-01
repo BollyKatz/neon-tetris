@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Neon Tetris</title>
+    <!-- CSSの読み込み -->
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,12 +26,9 @@
 
                 <div class="controls-info glass">
                     <h3>CONTROLS</h3>
-                    <div class="key-row"><span class="key">←</span><span class="key">→</span><span
-                            class="label">Move</span></div>
+                    <div class="key-row"><span class="key">←</span><span class="key">→</span><span class="label">Move</span></div>
                     <div class="key-row"><span class="key">↓</span><span class="label">Soft Drop</span></div>
-                    <div class="key-row"><span class="key">[</span><span class="key">]</span><span
-                            class="label">Rotate</span>
-                    </div>
+                    <div class="key-row"><span class="key">[</span><span class="key">]</span><span class="label">Rotate</span></div>
                 </div>
             </aside>
 
@@ -94,8 +92,11 @@
             <button id="btn-pause" class="control-btn">⏸</button>
         </div>
     </div>
-    </div>
-    <script type="module" src="./src/main.js"></script>
-</body>
 
+    <!-- JavaScriptファイルの読み込み順（重要！） -->
+    Piece.js</script>
+    Board.js</script>
+    Game.js</script>
+    main.js</script>
+</body>
 </html>
